@@ -323,6 +323,7 @@ fn main() -> anyhow::Result<()> {
                 (GET)  ["/"]                    => { static_html("index.html")        },
                 (GET)  ["/dumb/"]               => { static_html("dumb/index.html")   },
                 (GET)  ["/terms/"]              => { static_html("terms/index.html")  },
+                (GET)  ["/debug/"]              => { static_html("debug/index.html")  },
                 (GET)  ["/gallery/"]            => { static_html("gallery/index.html")},
 
                 (POST) ["/api/upload"]          => { upload(request)                  },
